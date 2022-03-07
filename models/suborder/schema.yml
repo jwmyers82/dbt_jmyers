@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: suborder_base
+      description: "Initial cleaning of suborder table"
+      columns:
+          - name: __hevo_ref_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: suborder_filtered
+      description: "Keep only most recent record"
+      columns:
+          - name: suborder_number
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null

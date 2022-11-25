@@ -7,6 +7,6 @@ SELECT DISTINCT
   termID AS term_id,
   termLabel AS term_label,
   dictText AS dictionary_text,
--- def_id AS definition_id, -- missing
+  def_id AS definition_id,
   matchType AS match_type
 FROM `mockecommerce-342202.bible.theography_easton`

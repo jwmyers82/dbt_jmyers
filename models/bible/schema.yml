@@ -25,3 +25,331 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: chapter_author
+      description: ""
+      columns:
+          - name: osis_chapter
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: chapter
+      description: ""
+      columns:
+          - name: osis_chapter
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character_alias
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character_chapter_authored
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character_event
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character_people_group
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character_relationship
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character_verse
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: character
+      description: ""
+      columns:
+          - name: person_key
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: easton
+      description: ""
+      columns:
+          - name: dictionary_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: easton_character
+      description: ""
+      columns:
+          - name: dictionary_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: easton_place
+      description: ""
+      columns:
+          - name: dictionary_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event_character
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event_location
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event_participation
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event_people_group
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event_reference_location
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event_verse
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: event
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: people_group_character
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: people_group_event
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: people_group_verse
+      description: ""
+      columns:
+          - name: timeline_event_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_alias
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_book
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_character
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_event_group
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_event
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_life_event
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_recogito_type
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_timeline
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place_verse
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: place
+      description: ""
+      columns:
+          - name: location_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: timeperiod_book
+      description: ""
+      columns:
+          - name: book_num
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: timeperiod_event
+      description: ""
+      columns:
+          - name: timeline_event_name
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: timeperiod
+      description: ""
+      columns:
+          - name: year_num
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: timeperiod_life_event
+      description: ""
+      columns:
+          - name: pk
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: verse_character
+      description: ""
+      columns:
+          - name: osis_verse
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: verse_people_group
+      description: ""
+      columns:
+          - name: osis_verse
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: verse_quote
+      description: ""
+      columns:
+          - name: osis_verse
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: verse_timeline
+      description: ""
+      columns:
+          - name: osis_verse
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: verse
+      description: ""
+      columns:
+          - name: osis_verse
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null

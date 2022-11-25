@@ -16,6 +16,6 @@ SELECT DISTINCT
   birthPlace AS birth_location,
   deathPlace AS death_location,
   dictionaryLink AS dictionary_link,
-  dictionaryText AS dictionary_text--,
+  dictionaryText AS dictionary_text,
   dictText AS alt_dictionary_text
 FROM `mockecommerce-342202.bible.theography_people`

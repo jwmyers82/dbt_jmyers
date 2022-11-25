@@ -1,0 +1,27 @@
+version: 2
+
+models:
+    - name: book
+      description: "Initial cleaning of linbookeitem table"
+      columns:
+          - name: osis_book
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: book_author
+      description: ""
+      columns:
+          - name: osis_book
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+    - name: book_place
+      description: ""
+      columns:
+          - name: osis_book
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null

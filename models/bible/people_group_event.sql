@@ -10,7 +10,7 @@ FROM `mockecommerce-342202.bible.theography_people_groups` people_group,
   WHERE people_group.events_dev IS NOT NULL
 )
 SELECT
-  MD5(CONCAT(people_group, timeline_event_id)) AS pk,
+  MD5(CONCAT(people_group, timeline_event_name)) AS pk,
   people_group,
-  timeline_event_id
+  timeline_event_name
 FROM base

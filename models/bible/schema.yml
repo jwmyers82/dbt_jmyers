@@ -137,7 +137,7 @@ models:
             tests:
                 - unique
                 - not_null
-    - name: event_participation
+    - name: event_participant
       description: ""
       columns:
           - name: pk

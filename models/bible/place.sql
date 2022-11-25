@@ -14,7 +14,7 @@ SELECT DISTINCT
   recogitoLat AS recogito_latitude,
   recogitoLon AS recogito_longitude,
   rootID as root_id,
-  precision,
+  `precision`,
   comment AS notes,
   dictionaryLink AS dictionary_link,
   dictionaryText AS dictionary_text,
@@ -24,7 +24,7 @@ SELECT DISTINCT
   recogitoComments AS recogito_notes,
   recogitoUID AS recogito_uid,
   slug,
-  duplicateOf AS duplicate_of,
+  duplicate_of,
   eastons,
   dictText AS alt_dictionary_text,
   featureSubType AS feature_subtype

@@ -59,7 +59,8 @@ paternal_sibling AS (
   FROM `mockecommerce-342202.bible.theography_people` person,
   UNNEST(SPLIT(person.halfSiblingsSameFather)) related_person
   WHERE person.halfSiblingsSameFather IS NOT NULL
-)
+),
+base AS (
 SELECT * FROM child
 UNION ALL
 SELECT * FROM mother
@@ -71,3 +72,10 @@ UNION ALL
 SELECT * FROM maternal_sibling
 UNION ALL
 SELECT * FROM paternal_sibling
+)
+SELECT
+  MD5(CONCAT(person_key, relationship, related_person)) AS pk,
+  person_key,
+  relationship,
+  related_person
+FROM base

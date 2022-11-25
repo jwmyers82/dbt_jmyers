@@ -12,7 +12,7 @@ models:
     - name: book_author
       description: ""
       columns:
-          - name: osis_book
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -20,7 +20,7 @@ models:
     - name: book_place
       description: ""
       columns:
-          - name: osis_book
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -28,7 +28,7 @@ models:
     - name: chapter_author
       description: ""
       columns:
-          - name: osis_chapter
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -44,7 +44,7 @@ models:
     - name: character_alias
       description: ""
       columns:
-          - name: person_key
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -52,7 +52,7 @@ models:
     - name: character_chapter_authored
       description: ""
       columns:
-          - name: person_key
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -60,7 +60,7 @@ models:
     - name: character_event
       description: ""
       columns:
-          - name: person_key
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -68,7 +68,7 @@ models:
     - name: character_people_group
       description: ""
       columns:
-          - name: person_key
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -76,7 +76,7 @@ models:
     - name: character_relationship
       description: ""
       columns:
-          - name: person_key
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -84,7 +84,7 @@ models:
     - name: character_verse
       description: ""
       columns:
-          - name: person_key
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -108,7 +108,7 @@ models:
     - name: easton_character
       description: ""
       columns:
-          - name: dictionary_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -116,7 +116,7 @@ models:
     - name: easton_place
       description: ""
       columns:
-          - name: dictionary_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -124,7 +124,7 @@ models:
     - name: event_character
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -132,7 +132,7 @@ models:
     - name: event_location
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -140,7 +140,7 @@ models:
     - name: event_participation
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -148,7 +148,7 @@ models:
     - name: event_people_group
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -156,7 +156,7 @@ models:
     - name: event_reference_location
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -164,7 +164,7 @@ models:
     - name: event_verse
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -180,7 +180,7 @@ models:
     - name: people_group_character
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -188,7 +188,7 @@ models:
     - name: people_group_event
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -196,7 +196,7 @@ models:
     - name: people_group_verse
       description: ""
       columns:
-          - name: timeline_event_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -204,7 +204,7 @@ models:
     - name: place_alias
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -212,7 +212,7 @@ models:
     - name: place_book
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -220,7 +220,7 @@ models:
     - name: place_character
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -228,7 +228,7 @@ models:
     - name: place_event_group
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -236,7 +236,7 @@ models:
     - name: place_event
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -244,7 +244,7 @@ models:
     - name: place_life_event
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -252,7 +252,7 @@ models:
     - name: place_recogito_type
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -260,7 +260,7 @@ models:
     - name: place_timeline
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -268,7 +268,7 @@ models:
     - name: place_verse
       description: ""
       columns:
-          - name: location_id
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -284,7 +284,7 @@ models:
     - name: timeperiod_book
       description: ""
       columns:
-          - name: book_num
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -292,7 +292,7 @@ models:
     - name: timeperiod_event
       description: ""
       columns:
-          - name: timeline_event_name
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -316,7 +316,7 @@ models:
     - name: verse_character
       description: ""
       columns:
-          - name: osis_verse
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -324,7 +324,7 @@ models:
     - name: verse_people_group
       description: ""
       columns:
-          - name: osis_verse
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -332,7 +332,7 @@ models:
     - name: verse_quote
       description: ""
       columns:
-          - name: osis_verse
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
@@ -340,7 +340,7 @@ models:
     - name: verse_timeline
       description: ""
       columns:
-          - name: osis_verse
+          - name: pk
             description: "The primary key for this table"
             tests:
                 - unique
